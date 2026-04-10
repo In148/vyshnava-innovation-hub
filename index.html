@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyshnava Innovation Hub</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #0b1d3a;
+    color: white;
+}
+
+header {
+    background: #0f2f5f;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 { margin: 0; }
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #123d7a;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+button {
+    background: #00c853;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0f2f5f;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vyshnava Innovation Hub 🚀</h1>
+    <p>Helping Students Build Projects & Ideas</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>👨‍🎓 About Me</h2>
+<p>I am <b>Vyshnava Peeru C</b>, Class 10 student at Kendriya Vidyalaya Pattom (Shift 2), Kerala.</p>
+<p>I help students with innovation & electronics projects.</p>
+</div>
+
+<div class="card">
+<h2>👥 Our Team</h2>
+<ul>
+<li><b>Aadhidev JS</b> – Design & Art</li>
+<li><b>Abdul Hadi</b> – Ideas & Development</li>
+<li>+ More Members</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>💡 Get Help</h2>
+<input id="name" placeholder="Your Name">
+<textarea id="idea" placeholder="Describe your project idea"></textarea>
+<button onclick="submitForm()">Submit</button>
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>📞 Contact</h2>
+<p>📱 WhatsApp: <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Click Here</a></p>
+<p>📞 Phone Call Available</p>
+<p>💻 Google Meet / Teams (Coming Soon)</p>
+</div>
+
+<div class="card">
+<h2>💰 Support (Optional)</h2>
+<p>If you want to support, you can pay voluntarily ❤️</p>
+<button onclick="alert('UPI/Payment coming soon')">Support</button>
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 Vyshnava Innovation Hub</p>
+</footer>
+
+<script>
+function submitForm() {
+    let name = document.getElementById("name").value;
+    let idea = document.getElementById("idea").value;
+
+    if(name === "" || idea === "") {
+        document.getElementById("msg").innerText = "Please fill all fields";
+        return;
+    }
+
+    document.getElementById("msg").innerText = "Submitted successfully!";
+}
+</script>
+
+</body>
+</htm
